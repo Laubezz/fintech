@@ -1,0 +1,27 @@
+.floating-menu a, 
+
+.floating-menu h3 {
+    display: block;
+}
+.material-icons-button {
+    transition: transform 0.2s;
+}
+
+/* Hover effect */
+.material-icons-button:hover {
+    transform: scale-125;
+}
+
+/* Click effect */
+.material-icons-button:active {
+    transform: scale-90;
+}
+.readOnlyInput {
+    box-shadow: 0px 10px 5px 1px rgba(227,227,227,0.76);
+    padding-left: 10px;
+}
+.readOnlyInput:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #38a169; /* Green border color */
+    box-shadow: 0px 10px 5px 1px rgba(227,227,227,0.76);
+}

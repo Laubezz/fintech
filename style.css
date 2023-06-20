@@ -1,0 +1,36 @@
+.loginInput:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #38a169; /* Green border color */
+    box-shadow: 0px 10px 5px 1px rgba(227,227,227,0.76);
+  }
+
+.loginInput {
+  box-shadow: 0px 10px 5px 1px rgba(227,227,227,0.76);
+  padding-left: 10px;
+}  
+
+.loginButton {
+  box-shadow: 0px 6px 5px 1px rgba(227,227,227,0.76);
+}
+
+.toggleInput:before {
+  content: '';
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+  box-shadow: 0 0.125rem 0.5rem rgba(188, 188, 188, 0.2);
+  background-color: white;
+  transition: .2s ease-in-out;
+}
+
+.toggleInput:checked {
+  background-color:#38a169;
+}
+
+.toggleInput:checked:before {
+  left: 1.25rem;
+}

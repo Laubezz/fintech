@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <title>Auto Manager</title>
+</head>
+<script>
+    function redirectToWelcomePage() {
+      window.location.href = "/fase3/cap5/pages/welcomePage";
+    }
+  </script>
+<body>
+  <!-- Div princiapl  -->
+  <div class="grid margin-0 justify-center w-full">
+    <!-- Conteudo da foto  -->
+    <div class="flex my-20 justify-center">
+        <img class="w-40" src="./public/automanagerlogo.png">
+    </div>
+
+    <!-- Conteudo dos inputs de login  -->
+    <div class="w-80 space-y-6">
+        <div>
+            <p class="text-base">CPF/CNPJ</p>
+            <input class="loginInput text-base outline-1 outline-green-500 outline rounded outline-offset-0 w-full 80 h-10 mt-4 border-b-2 border-green-400 animate">
+        </div>
+        <div>
+            <p class="text-base">Senha</p>
+            <input type="password" class="loginInput text-base outline-1 outline-green-500 outline rounded outline-offset-0 w-full h-10 mt-4 border-b-2 border-green-400 animate">
+        </div>
+    </div>
+
+    <!-- Conteudo dos botoes de login e cadastro  -->
+    <div class="w-80 flex justify-between mt-7"/>
+        <div class="flex items-center">
+            <p class="text-sm mr-2">Ainda sem conta?</p>
+            <button class="text-sm text-blue-500 underline">cadastre-se</button>
+        </div>
+        <button onClick="redirectToWelcomePage()" class="loginButton bg-green-500 hover:bg-green-600 active:bg-green-700 text-white drop-shadow-2xl active:scale-75 font-bold px-4 h-8 rounded-lg text-center transition-all duration-300">Login</button>
+    </div>
+
+    <!-- Conteudo para login com digital  -->
+    <div class="w-70 flex fixed bottom-0 left-0 w-full h-28 items-center bg-gray-100 p-4 justify-between px-10">
+        <p>Pular este login e fazer com a sua digital.</p>
+            <label class="flex items-center">
+                <input class="toggleInput relative w-10 h-5 transition-all duration-200 ease-in-out bg-gray-400 rounded-full shadow-inner outline-none appearance-none " type="checkbox" checked />
+        </label>
+    </div>
+</div>
+</body>
+</html>
